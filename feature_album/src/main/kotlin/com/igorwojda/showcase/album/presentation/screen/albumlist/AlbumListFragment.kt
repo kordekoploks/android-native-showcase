@@ -19,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -156,7 +157,6 @@ class AlbumListFragment : BaseFragment() {
         }
     }
 }
-
 @Composable
 private fun AlbumListScreen(viewModel: AlbumListViewModel) {
     val uiState: UiState by viewModel.uiStateFlow.collectAsStateWithLifecycle()
